@@ -10,7 +10,8 @@ namespace Homework_1.Tasks
     {
         public static void Init()
         {
-            Console.WriteLine("Добро пожаловать в программу \"Анкета\"!");
+            Console.WriteLine("Добро пожаловать в задание 1!");
+            Console.WriteLine("Давайте с вами познакомимся");
         }
 
         public static void Execute()
@@ -41,13 +42,6 @@ namespace Homework_1.Tasks
                 $"ваш возраст: {age} лет, " +
                 $"ваш рост: {height} см, " +
                 $"ваш вес: {weight} кг");
-        }
-
-        public static void Finish()
-        {
-            Console.WriteLine("Нажмите любую клавишу для возврата в главное меню");
-
-            Console.ReadLine();
         }
     }
 }

@@ -16,40 +16,38 @@ namespace Homework_1.Tasks
 
         public static void Execute()
         {
-            Console.WriteLine("Для начала введите ваш вес в кг");
-            
-            string weight = Console.ReadLine();
+            bool isRunning = true;
 
-            Console.WriteLine("Теперь введите ваш рост в см");
-
-            string height = Console.ReadLine();
-
-            try
+            while (isRunning)
             {
-                int w = int.Parse(weight);
-                double d = double.Parse(height);
+                Console.WriteLine("Для начала введите ваш вес в кг");
 
-                double h = Math.Round(d/100, 2);
+                string weight = Console.ReadLine();
 
-                Console.WriteLine(h);
+                Console.WriteLine("Теперь введите ваш рост в см");
 
-                double i = w / (h * h);
+                string height = Console.ReadLine();
 
-                Console.WriteLine($"Ваш ИМТ - {i}");
+                try
+                {
+                    int w = int.Parse(weight);
+                    double d = double.Parse(height);
+
+                    double h = Math.Round(d / 100, 2);
+
+                    Console.WriteLine(h);
+
+                    double i = w / (h * h);
+
+                    Console.WriteLine($"Ваш ИМТ - {i}");
+
+                    isRunning = false;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Кажется, вы где-то ошиблись. Попробуйте еще раз");
+                }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Кажется, вы где-то ошиблись. Попробуйте еще раз");
-
-                Execute();
-            }
-        }
-
-        public static void Finish()
-        {
-            Console.WriteLine("Нажмите любую клавишу для возврата в главное меню");
-
-            Console.ReadLine();
         }
 
     }
