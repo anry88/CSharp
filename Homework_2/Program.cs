@@ -11,7 +11,7 @@ namespace Homework_2
         static string taskNumber;
         static void Main(string[] args)
         {
-            
+            Menu();
         }
 
         static void Menu()
