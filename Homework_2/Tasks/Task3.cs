@@ -10,8 +10,7 @@ namespace Homework_2.Tasks
     {
         public static void SumOddnumber()
         {
-            int i;
-            int sum = 0;
+            int i, sum = 0;
 
             do
             {
