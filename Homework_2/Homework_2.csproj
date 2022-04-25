@@ -46,9 +46,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tasks\Task1.cs" />
+    <Compile Include="Tasks\Task2.cs" />
+    <Compile Include="Tasks\Task3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedLibs\SharedLibs.csproj">
+      <Project>{568e2ea4-5d02-4d49-a089-40bfcec5e20d}</Project>
+      <Name>SharedLibs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

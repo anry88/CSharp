@@ -11,7 +11,7 @@ namespace SharedLibs
         public static void Greetings(string taskName, string taskDescription)
         {
             Console.Clear();
-            Console.WriteLine("");
+            Console.WriteLine("Бражников Андрей");
             Console.WriteLine($"{taskName}");
             Console.WriteLine($"{taskDescription}");
         }

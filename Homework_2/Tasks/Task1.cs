@@ -9,18 +9,34 @@ namespace Homework_2.Tasks
     internal class Task1
     {
         //проблема если a = b и они больше c
-        public static void MinNumber(int a, int b, int c)
+        public static int MinNumber()
         {
-            if(a < b && a < c)
+            int a, b, c;
+            int min = 0;
+
+            Console.WriteLine("Введите первое число");
+            a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Введите второе число");
+            b = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Введите третье число");
+            c = int.Parse(Console.ReadLine());
+
+            min = a;
+
+            if (b < min)
             {
-                Console.WriteLine("Наименьшее число - a");
-            }else if (b < a && b < c){
-                Console.WriteLine("Наименьшее число - b");
+                min = b;
             }
-            else
+            if (c < min)
             {
-                Console.WriteLine("Наименьшее число - c");
+                min = c;
             }
+
+            Console.WriteLine($"Наименьшее число - {min}");
+
+            return min;
         }
     }
 }
