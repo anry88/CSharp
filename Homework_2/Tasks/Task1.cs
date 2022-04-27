@@ -12,7 +12,6 @@ namespace Homework_2.Tasks
         public static int MinNumber()
         {
             int a, b, c;
-            int min = 0;
 
             Console.WriteLine("Введите первое число");
             a = int.Parse(Console.ReadLine());
@@ -23,7 +22,7 @@ namespace Homework_2.Tasks
             Console.WriteLine("Введите третье число");
             c = int.Parse(Console.ReadLine());
 
-            min = a;
+            int min = a;
 
             if (b < min)
             {
@@ -34,7 +33,7 @@ namespace Homework_2.Tasks
                 min = c;
             }
 
-            Console.WriteLine($"Наименьшее число - {min}");
+            Console.WriteLine($"Наименьшее число: {min}");
 
             return min;
         }

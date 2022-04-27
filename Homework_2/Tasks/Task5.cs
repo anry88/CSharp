@@ -38,11 +38,11 @@ namespace Homework_2.Tasks
             if(currentBMI < minBMI)
             {
 
-                Console.WriteLine($"Вам необходимо набрать {CountKg(minBMI)} кг");
+                Console.WriteLine($"Вам необходимо набрать {CountKg(minBMI):F2} кг");
             }
             else if(currentBMI > maxBMI)
             {
-                Console.WriteLine($"Вам необходимо похудеть на {CountKg(maxBMI)} кг");
+                Console.WriteLine($"Вам необходимо похудеть на {CountKg(maxBMI):F2} кг");
             }
             else
             {
