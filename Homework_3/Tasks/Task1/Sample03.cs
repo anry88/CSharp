@@ -84,8 +84,24 @@ namespace Homework_3.Tasks.Task1
         public static ComplexClass Plus(ComplexClass a, ComplexClass b)
         {
             ComplexClass complexRes = new ComplexClass(a.re + b.re, a.im + b.im);
-            //complexRes.re = a.re + b.re;
-            //complexRes.im = a.im + b.im;
+            return complexRes;
+        }
+
+        public static ComplexClass Minus(ComplexClass a, ComplexClass b)
+        {
+            ComplexClass complexRes = new ComplexClass(a.re - b.re, a.im - b.im);
+            return complexRes;
+        }
+
+        public static ComplexClass Multiplication(ComplexClass a, ComplexClass b)
+        {
+            ComplexClass complexRes = new ComplexClass(a.re * b.re, a.im * b.im);
+            return complexRes;
+        }
+
+        public static ComplexClass Division(ComplexClass a, ComplexClass b)
+        {
+            ComplexClass complexRes = new ComplexClass(a.re / b.re, a.im / b.im);
             return complexRes;
         }
 
