@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Homework_3.Tasks.Task3;
 
 namespace Homework_3
 {
@@ -58,7 +59,7 @@ namespace Homework_3
                             "**Добавить проверку, чтобы знаменатель не равнялся 0." +
                             "Выбрасывать исключение ArgumentException(\"Знаменатель не может быть равен 0\"); \n" +
                             "***Добавить упрощение дробей.");
-                        //Task3.SumOddnumber();
+                        Task3.Start();
                         break;
                     default:
                         Console.WriteLine("Кажется, вы где-то ошиблись. Попробуйте еще раз");
