@@ -1,4 +1,5 @@
-﻿using Homework_3.Tasks.Task1;
+﻿using Homework_3.Tasks;
+using Homework_3.Tasks.Task1;
 using SharedLibs;
 using System;
 using System.Collections.Generic;
@@ -39,14 +40,13 @@ namespace Homework_3
                             "в) Добавить диалог с использованием switch демонстрирующий работу класса.");
                         Console.WriteLine("Для демонстрации работы структуры введите 0, для класса - 1");
                         Task1.Start(int.Parse(Console.ReadLine()));
-                        
                         break;
                     case "2":
                         MyLibs.Greetings("Задание 2",
                             "а) С клавиатуры вводятся числа, пока не будет введён 0 (каждое число в новой строке).\n" +
-                            " Требуется подсчитать сумму всех нечётных положительных чисел. \n" +
+                            "Требуется подсчитать сумму всех нечётных положительных чисел. \n" +
                             "Сами числа и сумму вывести на экран, используя tryParse.");
-                        //Task2.CountNumbers();
+                        Task2.SumOddnumber();
                         break;
                     case "3":
                         MyLibs.Greetings("Задание 3",
