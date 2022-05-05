@@ -22,7 +22,7 @@ namespace Homework_4
 
             while (isRunnig)
             {
-                Console.WriteLine("Для просмотра задания введите его номер от 1 до 3 и нажмите Enter, " +
+                Console.WriteLine("Для просмотра задания введите его номер от 1 до 5 и нажмите Enter, " +
                     "для выхода введите 0");
 
                 taskNumber = Console.ReadLine();
@@ -73,6 +73,11 @@ namespace Homework_4
                             "только логины и пароли считать из файла в массив. \n" +
                             "Создайте структуру Account, содержащую Login и Password.");
                         Task4.Start();
+                        break;
+                    case "5":
+                        MyLibs.Greetings("Задание 5",
+                            "");
+                        Task5.Start();
                         break;
                     default:
                         Console.WriteLine("Кажется, вы где-то ошиблись. Попробуйте еще раз");
