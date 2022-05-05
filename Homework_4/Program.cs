@@ -67,6 +67,13 @@ namespace Homework_4
                             "в) ***Подсчитать частоту вхождения каждого элемента в массив(коллекция Dictionary< int,int>)");
                         Task3.Start();
                         break;
+                    case "4":
+                        MyLibs.Greetings("Задание 4",
+                            "Решить задачу с логинами из урока 2, " +
+                            "только логины и пароли считать из файла в массив. \n" +
+                            "Создайте структуру Account, содержащую Login и Password.");
+                        Task4.Start();
+                        break;
                     default:
                         Console.WriteLine("Кажется, вы где-то ошиблись. Попробуйте еще раз");
                         break;
