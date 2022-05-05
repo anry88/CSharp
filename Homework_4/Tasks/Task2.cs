@@ -21,7 +21,15 @@ namespace Homework_4.Tasks
             for (int i = 0; i < arr.Length; i++)
             {
                 arr[i] = r.Next(-10000, 10001);
-                Console.Write(arr[i] + ", ");
+
+                if(i != arr.Length - 1)
+                {
+                    Console.Write(arr[i] + ", ");
+                }
+                else
+                {
+                    Console.Write(arr[i] + "\n");
+                }
             }
 
             Console.Write("\n");
@@ -31,19 +39,25 @@ namespace Homework_4.Tasks
             Console.WriteLine();
 
             //Текстовый файл упорно не перемещается в папку bin\debug при компиляции и, соответственно,
-            //не находится программой. Поэтому использую абсолютный путь.
+            //не находится программой в BaseDirectory. Поэтому использую другой вариант.
             //int[] arr2 = StaticClass.CoolArray(AppDomain.CurrentDomain.BaseDirectory + "Array.txt");
 
-            int[] arr2 = StaticClass.CoolArray("C:\\Homeworks\\CSharp\\Homework_4\\Array.txt");
+            int[] arr2 = StaticClass.CoolArray("..\\..\\Array.txt");
 
-            Console.Write($"Ваш массив: ");
+            Console.Write($"Ваш массив из файла: ");
         
             for (int i = 0; i < arr2.Length; i++)
             {
-                Console.Write(arr2[i] + ", ");
+                if (i != arr2.Length - 1)
+                {
+                    Console.Write(arr2[i] + ", ");
+                }
+                else
+                {
+                    Console.Write(arr2[i] + "\n");
+                }
             }
 
-            Console.Write("\n");
             Console.WriteLine($"Количество пар элементов массива, " +
                 $"в которых только одно число делится на 3: {StaticClass.CountPairsDivisingByThree(arr2)}");
         }
