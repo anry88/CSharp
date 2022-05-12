@@ -93,6 +93,7 @@
   <ItemGroup>
     <Content Include="Accounts.txt" />
     <Content Include="Array.txt" />
+    <Content Include="TwoDimensionalArray.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
