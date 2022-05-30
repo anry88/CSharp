@@ -59,7 +59,7 @@ namespace Homework_5
                         MyLibs.Greetings("Задание 3",
                             "*Для двух строк написать метод, определяющий, является ли одна строка перестановкой другой.\n" +
                             "Например: badc являются перестановкой abcd.");
-                        //Task3.Start();
+                        Task3.Start();
                         break;
                     case "4":
                         MyLibs.Greetings("Задание 4",
