@@ -48,6 +48,7 @@
     <Compile Include="Tasks\Task1.cs" />
     <Compile Include="Tasks\Task2.cs" />
     <Compile Include="Tasks\Task3.cs" />
+    <Compile Include="Tasks\Task4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -57,6 +58,11 @@
       <Project>{568E2EA4-5D02-4D49-A089-40BFCEC5E20D}</Project>
       <Name>SharedLibs</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Students.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
