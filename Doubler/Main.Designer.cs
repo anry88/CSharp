@@ -33,6 +33,7 @@
             this.buttonPlus = new System.Windows.Forms.Button();
             this.labelComputerNumber = new System.Windows.Forms.Label();
             this.labelUserNubmer = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonReset
@@ -40,9 +41,10 @@
             this.buttonReset.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonReset.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonReset.Location = new System.Drawing.Point(303, 35);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(126, 61);
+            this.buttonReset.Size = new System.Drawing.Size(126, 48);
             this.buttonReset.TabIndex = 0;
             this.buttonReset.Text = "Новая игра";
             this.buttonReset.UseVisualStyleBackColor = true;
@@ -52,10 +54,10 @@
             // 
             this.buttonMultiply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMultiply.Location = new System.Drawing.Point(303, 102);
+            this.buttonMultiply.Location = new System.Drawing.Point(303, 141);
             this.buttonMultiply.Name = "buttonMultiply";
-            this.buttonMultiply.Size = new System.Drawing.Size(126, 61);
-            this.buttonMultiply.TabIndex = 1;
+            this.buttonMultiply.Size = new System.Drawing.Size(126, 48);
+            this.buttonMultiply.TabIndex = 2;
             this.buttonMultiply.Text = "x2";
             this.buttonMultiply.UseVisualStyleBackColor = true;
             this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
@@ -64,10 +66,10 @@
             // 
             this.buttonPlus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPlus.Location = new System.Drawing.Point(303, 169);
+            this.buttonPlus.Location = new System.Drawing.Point(303, 195);
             this.buttonPlus.Name = "buttonPlus";
-            this.buttonPlus.Size = new System.Drawing.Size(126, 61);
-            this.buttonPlus.TabIndex = 2;
+            this.buttonPlus.Size = new System.Drawing.Size(126, 48);
+            this.buttonPlus.TabIndex = 3;
             this.buttonPlus.Text = "+1";
             this.buttonPlus.UseVisualStyleBackColor = true;
             this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
@@ -87,24 +89,37 @@
             this.labelUserNubmer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelUserNubmer.AutoSize = true;
             this.labelUserNubmer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelUserNubmer.Location = new System.Drawing.Point(76, 143);
+            this.labelUserNubmer.Location = new System.Drawing.Point(76, 153);
             this.labelUserNubmer.Name = "labelUserNubmer";
             this.labelUserNubmer.Size = new System.Drawing.Size(140, 20);
             this.labelUserNubmer.TabIndex = 4;
             this.labelUserNubmer.Text = "Текущее число:";
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCancel.Location = new System.Drawing.Point(303, 89);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(126, 48);
+            this.buttonCancel.TabIndex = 1;
+            this.buttonCancel.Text = "Отменить";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 261);
+            this.ClientSize = new System.Drawing.Size(459, 271);
+            this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.labelUserNubmer);
             this.Controls.Add(this.labelComputerNumber);
             this.Controls.Add(this.buttonPlus);
             this.Controls.Add(this.buttonMultiply);
             this.Controls.Add(this.buttonReset);
             this.MaximumSize = new System.Drawing.Size(500, 400);
-            this.MinimumSize = new System.Drawing.Size(475, 300);
+            this.MinimumSize = new System.Drawing.Size(475, 310);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Удвоитель";
@@ -120,6 +135,7 @@
         private System.Windows.Forms.Button buttonPlus;
         private System.Windows.Forms.Label labelComputerNumber;
         private System.Windows.Forms.Label labelUserNubmer;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }
 
