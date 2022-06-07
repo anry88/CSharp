@@ -74,7 +74,6 @@ namespace Doubler
             {
                 userNumber = actions.Pop();
                 UpdateGameState(userNumber);
-                Console.WriteLine(userNumber.ToString());
             }
             
         }
