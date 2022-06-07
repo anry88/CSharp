@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_6", "Homework_6\Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doubler", "Doubler\Doubler.csproj", "{D2AC5D77-CB1F-4FA3-8EBD-114275618859}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{73F339DB-3D26-49CA-B89B-525DB054BAC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{D2AC5D77-CB1F-4FA3-8EBD-114275618859}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2AC5D77-CB1F-4FA3-8EBD-114275618859}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2AC5D77-CB1F-4FA3-8EBD-114275618859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F339DB-3D26-49CA-B89B-525DB054BAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F339DB-3D26-49CA-B89B-525DB054BAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F339DB-3D26-49CA-B89B-525DB054BAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F339DB-3D26-49CA-B89B-525DB054BAC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
