@@ -14,6 +14,7 @@ namespace TrueFalseEditor
     {
         TrueFalseDatabase database;
 
+        public TrueFalseDatabase Database { get; }
 
         public Main()
         {
@@ -107,7 +108,7 @@ namespace TrueFalseEditor
         {
             if (database == null)
             {
-                MessageBox.Show("База вопросов не загуружена", "TrueFalseEditor",
+                MessageBox.Show("База вопросов не загружена", "TrueFalseEditor",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 return false;
@@ -123,7 +124,7 @@ namespace TrueFalseEditor
         {
             if (CheckDatabase())
             {
-                NewGame newGame = new NewGame();
+                NewGame newGame = new NewGame(database);
 
                 newGame.Show();
             }
