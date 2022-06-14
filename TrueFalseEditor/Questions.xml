@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <Text>Земля круглая?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Небо голубое?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Луна зеленая?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Вода мокрая?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Снег обычно идет летом?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Россия - самая маленькая страна в мире?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>У квадрата 4 угла?</Text>
+    <TrueFalse>true</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Человек живет 200 лет?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Млекопитающие откладывают яйца?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+  <Question>
+    <Text>Собаки умеют летать?</Text>
+    <TrueFalse>false</TrueFalse>
+  </Question>
+</ArrayOfQuestion>
